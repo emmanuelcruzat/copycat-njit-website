@@ -16,35 +16,242 @@ section {
     padding: 50px 100px;
 }
 
-
-h1 {
-    font-size: 60px;
+.video-banner h1 {
+    font-size: 65px;
     text-align: center;
-    margin-top: -40px;
+    color: white;
+    line-height: 15px;
 }
 
 .red {
-    background-color: #cc0000;
+    background-image: url("res/red_fractal.png");
     border-top: #b00101 solid 15px;
     color: white;
 }
 
 .blue {
+    background-image: url("res/blue_fractal.png");
     background-color: #1c1475;
     border-top: #16105a solid 15px;
     color: white;
 }
 
 .gray {
+    background-image: url("res/gray_fractal.png");
     background-color: #939598;
     border-top: #7f8082 solid 15px;
     color: white;
 }
 
 .white {
+    background-image: url("res/white_fractal.png");
     border-top: #cdcdcd solid 15px;
 }
 
 .video-banner {
-    margin: 100px 0;
+    margin: 200px 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+/* Navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+
+.first-navbar {
+    background-color: white;
+    border-bottom: #cdcdcd solid 5px;
+}
+
+.second-navbar {
+    background-color: #cc0000;
+    border-bottom: #b00101 solid 5px;
+}
+  
+li {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+  
+
+li a {
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.first-navbar li a
+{
+    margin: 15px 10px;
+    color: #cc0000;
+    width: 100px;
+}
+
+/* styles NJIT logo */
+.first-navbar li:first-child
+{
+    margin-left: 60px;
+}
+
+.first-navbar li:first-child a
+{
+    width: 120px;
+}
+
+/* extra right-side margin for the rightmost link */
+.first-navbar li:first-child a
+{
+    margin: 15px 60px 15px 10px;
+}
+
+.second-navbar li a {
+    color: white;
+    width: 100px;
+    padding: 15px 25px 15px 25px;
+    transition: 0.5s;
+    border-bottom: #cc0000 solid 5px;
+}
+  
+/* Change the link colors on hover */
+.first-navbar li a:hover {
+    color: #e12727;
+    text-decoration: underline;
+    
+}
+
+.second-navbar li a:hover {
+    background-color: #e12727;
+    border-bottom: #ffffff solid 5px;
+    
+}
+
+
+.college {
+    padding: 50px 20px;
+    background: linear-gradient(to right, #e12727, #cc0000);
+}
+
+.college-right {
+    text-align: right;
+    padding: 50px 20px;
+    background: linear-gradient(to left, #b00101, #cc0000);
+}
+
+.section-header
+{
+    text-align: center;
+    font-size: 50px;
+}
+
+.div-header
+{
+    font-size: 40px;
+    margin: 0;
+}
+
+.ranking-grid
+{
+    background-image: url("res/white_fractal.png");
+    display: grid;
+    grid-template-areas: "big big medium1 medium1 small1 small2"
+                         "big big small3 small4 medium2 medium2";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.ranking-grid div
+{
+    background-color: rgb(204, 0, 0);
+    border-top: #b00101 solid 15px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.ranking-grid div p:first-child
+{
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+.ranking-grid div p:nth-child(2)
+{
+    font-size: 25px;
+    margin-bottom: -10px;
+}
+
+.ranking-grid div p:nth-child(3)
+{
+    font-style: italic;
+}
+
+.big
+{
+    grid-area: big;
+    background-image: url("res/placeholder_header.png");
+    box-shadow: inset 0px 1000px 1000px 1000px rgba(100,0,0,0.6);
+    background-size: cover;
+    
+}
+.medium1
+{
+    grid-area: medium1;
+    background-image: url("res/ckb_clocktower.png");
+    box-shadow: inset 0px 1000px 1000px 1000px rgba(100,0,0,0.6);
+    background-size: cover;
+}
+.medium2
+{
+    grid-area: medium2;
+    background-image: url("res/campuscenteratnjit.png");
+    box-shadow: inset 0px 1000px 1000px 1000px rgba(100,0,0,0.6);
+    background-size: cover;
+}
+.small1
+{
+    grid-area: small1;
+}
+.small2
+{
+    grid-area: small2;
+}
+.small3
+{
+    grid-area: small3;
+}
+.small4
+{
+    grid-area: small4;
+}
+
+.video-banner {
+    background-image: url("res/placeholder_header.png");
+    background-size: cover;
+    margin: 145px 0 0 0;
+    padding: 30vh;
+    box-shadow: inset 0px -5500px 1000px -5000px rgba(0,0,0,0.5);
+}
+
+#njit-logo
+{
+    width: 100%;
 }
